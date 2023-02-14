@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+/*this is used to put the same family font throughout the website*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+.container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*nav bar*/
+#nav-bar {
+	height: auto;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	background-color: black;
+    border-radius: white;
+    border-bottom: 10dvh;
+    border-width: 0.4cm;
+}
+.nav-bar {
+	background-color: black;
+	left: 0;
+	top: 0;
+	padding: 1rem 5rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    font-size: large;
+    font-family: cursive;
+}
+
+/*end*/
+
+/*start section */
+.start {
+	min-height: 80vh;
+	width: 100%;
+	padding-top: 50px;
+	justify-content: center;
+	background-color: black;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+}
+.start-info {
+	width: 100%;
+	text-align: center;
+}
+.start-info-heading {
+	font-size: 5rem;
+	font-weight: 500;
+	color: whitesmoke;
+}
+.start-info-subheading {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	color: white;
+}
+.start-info-button {
+	margin-top: 30px;
+	padding: 2rem 5rem;
+	display: inline-block;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	letter-spacing: .6rem;
+	background-color: rgba(85, 85, 85, 0.534);
+}
+.start-info-button:hover {
+	background-color: white;
+    color: black;
+}
+.start-img {
+	height: 7%;
+	width: 7%;
+	margin-bottom: 3rem;
+}
+.start-img img {
+	height: 100%;
+	width: 100%;
+}
+/*end*/
+
+/*about section */
+.about {
+	width: 100%;
+	min-height: 50vh;
+	padding: 10rem 5rem;
+	flex-direction: column;
+}
+.about .about-info {
+	text-align: center;
+}
+.about-info-heading {
+	font-size: 4rem;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	color: black;
+}
+.about-info-desc {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	margin-top: 10px;
+}
+.about-info-button {
+	padding: 1.6rem 2.6rem;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.548);
+	color: whitesmoke;
+	text-decoration: none;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*end*/
+
+/*extra section */
+.extra {
+	flex-direction: column;
+	min-height: 60vh;
+	padding: 10rem 5rem;
+    align-items: center;
+}
+.extra-header {
+	width: 100%;
+	text-align: center;
+}
+.extra-header-heading {
+	font-size: 4rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: black;
+}
+.extra-header-desc {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	margin-top: 20px;
+}
+.extra-info {
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	flex-direction: column;
+}
+.extra {
+	width: 100%;
+	min-height: 300px;
+	position: relative;
+	transition: .3s ease transform;
+	margin: 5px;
+}
+.extra-card {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	transform-style: preserve-3d;
+	transition: .3s ease transform;
+	display: block;
+}
+ .extra-front {
+ position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	backface-visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.13);
+	padding: 10px;
+}
+ .extra-back {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	backface-visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.13);
+	padding: 10px;
+}
+.extra-back {
+	transform: rotateY(180deg);
+}
+.extra-front  {
+	font-size: 4rem;
+	color: black;
+	margin-bottom: 10px;
+}
+.extra-front-heading {
+	font-size: 2.5rem;
+	text-transform: capitalize;
+}
+.extra-front-heading {
+	font-size: 2.5rem;
+	text-transform: capitalize;
+}
+.extra-info .extra:hover .extra-card {
+	transform: rotateY(180deg);
+}
+.extra-back-desc {
+	font-size: 1.3rem;
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+/*end*/
+
+/*hire section */
+.evaluate-button {
+    padding: 2rem 3rem;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.267);
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: .2rem;
+	margin-top: 10px;
+	color: whitesmoke;
+	transition: .3s ease background-color;
+}
+.evaluate-button:hover {
+	background-color: black;
+}
+/* End */
+
+/*footer*/
+.footer {
+	min-height: 20vh;
+	width: 100%;
+	background-color: black;
+	color: white;
+	flex-direction: column;
+	text-align: center;
+	padding: 5rem;
+}
+.footer-contact {
+	padding: 20px;
+}
+.footer-contact-heading {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+.footer-contact-info {
+	font-size: 1.4rem;
+	padding-top: 10px;
+	letter-spacing: .2rem;
+}
+/*END*/
+
+
+
+
