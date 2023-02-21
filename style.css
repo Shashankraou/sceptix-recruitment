@@ -14,7 +14,7 @@ html {
 .container {
 	width: 100%;
 	height: auto;
-	display: flex;
+	display:inline-block;
 	align-items: center;
 	justify-content: center;
 }
@@ -29,17 +29,20 @@ html {
 }
 .nav-bar {
 	background-color: black;
-	left: 0;
+	left: 100;
 	top: 0;
 	padding: 5rem;
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content:left;
 }
 .nav-info {
+	display: flex;
 	font-family: 'Montserrat', sans-serif;
+	text-shadow: 10vh;
 	font-size: 3rem;
 	color: white;
+	justify-content:center;
 }
 
 
@@ -47,7 +50,7 @@ html {
 
 /*start section */
 .start {
-	min-height: 80vh;
+	min-height: 92vh;
 	width: 100%;
 	padding-top: 50px;
 	justify-content: center;
