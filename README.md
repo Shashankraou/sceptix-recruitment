@@ -1,3 +1,3 @@
-Sceptix-recruitment(mini porject on Foss)
+Sceptix-recruitment(mini project on Foss)
 
 
