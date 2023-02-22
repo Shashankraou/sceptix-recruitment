@@ -239,7 +239,7 @@ html {
 /*end*/
 
 /*hire section */
-.evaluate{
+.evaluate {
 	min-height: 10vh;
 	flex-direction: column;
 	width: 100%;
@@ -247,7 +247,7 @@ html {
 	background-color: rgb(8, 8, 8);
 	padding: 3rem 2rem;
 }
-.evaluate-info{
+.evaluate-info {
 	color: black;
 	text-align: center;
     align-items: center;
@@ -294,7 +294,7 @@ html {
 	padding-top: 10px;
 	letter-spacing: .2rem;
 }
-/*END*/
+/*----END----*/
 
 
 
